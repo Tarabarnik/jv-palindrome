@@ -26,8 +26,6 @@ public class Palindrome {
         }
         String str = text.replaceAll("[^a-zA-Z^1-9]", "");
         StringBuilder sb = new StringBuilder(str.toLowerCase());
-        StringBuilder sbRev = new StringBuilder(sb.toString());
-        sbRev = sbRev.reverse();
-        return sb.toString().contentEquals(sbRev);
+        return sb.toString().contentEquals(sb.reverse());
     }
 }
